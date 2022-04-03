@@ -1,0 +1,14 @@
+1. wyszukiwanie dowolnej frazy w wyszukiwarce DuckDuckGo
+
+Scenario: Search with https://duckduckgo.com/
+GIVEN Page https://duckduckgo.com/ opened in browser
+WHEN Search phrase: "Adele" entered in search input box
+AND Clicked "search button"
+THEN First 3 search results contain phrase "Adele"
+
+2. logowanie do portalu edukacyjnego Coders Lab https://lms.coderslab.pl
+GIVEN Page https://lms.coderslab.pl  opened in browser
+WHEN Correct e-mail adress entered in "e-mail box"
+AND Correct password entered in "password box"
+THEN User is logged
+AND His name is show at the top of the CL page
